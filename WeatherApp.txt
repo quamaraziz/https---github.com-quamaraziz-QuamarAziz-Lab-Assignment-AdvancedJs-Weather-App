@@ -1,0 +1,60 @@
+Create an application which will show the weather information for a specific city.
+
+Users should be able to get the weather information for any valid cities.
+
+
+Data :-
+
+URL -> https://api.openweathermap.org/data/2.5/weather?q=
+
+Input :-  https://api.openweathermap.org/data/2.5/weather?q=Mumbai&units=metric&appid=7e3f21edee540e6110af347b55eb1ab2
+Ouput:-
+{
+    "coord": {
+        "lon": 72.8479,
+        "lat": 19.0144
+    },
+    "weather": [
+        {
+            "id": 721,
+            "main": "Haze",
+            "description": "haze",
+            "icon": "50d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 28.99,
+        "feels_like": 34.5,
+        "temp_min": 28.94,
+        "temp_max": 28.99,
+        "pressure": 1006,
+        "humidity": 79
+    },
+    "visibility": 4000,
+    "wind": {
+        "speed": 5.14,
+        "deg": 270
+    },
+    "clouds": {
+        "all": 20
+    },
+    "dt": 1647775036,
+    "sys": {
+        "type": 1,
+        "id": 9052,
+        "country": "IN",
+        "sunrise": 1647738782,
+        "sunset": 1647782360
+    },
+    "timezone": 19800,
+    "id": 1275339,
+    "name": "Mumbai",
+    "cod": 200
+}
+
+Ajax ->
+fetch -> We will fetch API
+		 ->
+
+Input:- City Name -> Bangalore, Mumbai, Chennai, Hyderabad, Delhi, Gujurat...
